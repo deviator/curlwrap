@@ -1,0 +1,6 @@
+name "curlwrap"
+description "Useful wraps around cURL"
+authors "deviator"
+license "MIT"
+
+libs "curl"
