@@ -60,7 +60,7 @@ struct Mail
         ///
         string name;
     }
-    ///
+    /// for some services 'from' e-mail in header must be equal user login
     User from;
     ///
     User[] recipients;
