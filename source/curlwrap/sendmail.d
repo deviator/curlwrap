@@ -19,9 +19,9 @@ struct SMTPSettings
     ///
     ushort port;
 
-    ///
+    /// need for auth on smtp server
     string username;
-    ///
+    /// ditto
     string password;
 
     ///
@@ -31,7 +31,7 @@ struct SMTPSettings
         starttls, ///
         ssl_tls ///
     }
-    ///
+    /// if used `ssl_tls` algorithm try connect by `smtps` protocol instead `smtp`
     Security security = Security.ssl_tls;
 
     ///

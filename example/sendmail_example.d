@@ -34,6 +34,9 @@ void main(string[] args)
         "starttls", &starttls
     );
 
+    sets.verifyHost = true;
+    sets.verifyPeer = true;
+
     stderr.writeln(sets);
 
     if (starttls) sets.security = sets.Security.starttls;
