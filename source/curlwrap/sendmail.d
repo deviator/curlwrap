@@ -256,7 +256,7 @@ public:
         else if (settings.security == settings.Security.starttls)
             ces(CurlOption.use_ssl, CurlUseSSL.tryssl);
 
-        ces(CurlOption.mail_from, settings.username);
+        ces(CurlOption.mail_from, mail.from.addr);
         ces(10_217, settings.username); // mail_auth
 
         curl_slist* rcpt_list;
