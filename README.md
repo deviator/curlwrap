@@ -18,5 +18,11 @@ auto to = Mail.User("john@example.com", "Mr. John");
 ms.send(Mail(from, [to], "Subject", "Mail body", Clock.currTime));
 ```
 
+Tested on:
+* gmail.com (with application password)
+* yandex.ru
+* mail.ru
+* rambler.ru
+
 See [`sendmail.d`](source/curlwrap/sendmail.d) for details
 and [`example`](example/sendmail_example.d) for working example.
